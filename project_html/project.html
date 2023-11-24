@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>First project</title>
     <link rel="stylesheet" href="../css_file/style.css" />
   </head>
   <body>
+    <header>
     <h1>📘 The Code Magazine</h1>
-    <p>Posted by <strong>Laura Jones </strong> on Monday, June 21st 2027</p>
 
+    <nav
+    <a href="../project_html/blog.html">Blog</a>
+    <a href="#">challenges</a>
+    <a href="#">flex box</a>
+    <a href="#">css grid</a>
+    </nav>
+    </header>
+
+    <article>
+      <header>
     <h2>The Basic Language of the Web: HTML</h2>
+     
+    <img
+      src="../images/laura-jones.jpg"
+      alt="picture"
+      width="50px"
+      height="50px"
+    />
+    <p class="author">Posted by <strong>Laura Jones </strong> on Monday, June 21st 2027</p>
+
+    <img
+      src="../images/post-img.jpg"
+      alt="code ong screen"
+      width="500px"
+      height="200px"
+     />
+    </header>
     <p>
       All modern websites and web applications are built using three
       <em>fundamental</em>
@@ -39,6 +67,11 @@
       <li>The closing tag</li>
       <li>The actual element</li>
     </ol>
+    <p>
+      You can learn more at <a href="https://developer.mozilla.org/en-US/" 
+        >Mdn web docs</a> </p
+      >
+    </p>
 
     <h3>Why should you learn HTML?</h3>
 
@@ -53,5 +86,37 @@
       <li>To have fun 😃</li>
     </ul>
     <p>Hopefully you learned something new here. See you next time!</p>
+   </article>
+
+   <aside>
+   <h4>
+      <strong>Related Posts</strong>
+   </h4>
+      <ul class="ul">
+        <li><img src="../images/related-1.jpg" alt="" 
+          width="75px" 
+          height="75px">
+          <a href="#">How to learn Web development</a></li>
+           <p class="related-author">By Khams</p>
+        <li><img src="../images/related-2.jpg" alt=""
+          width="75px" 
+          height="75px">
+          <a href="#">The Unknown Power of CSS</a></li>
+           <p class="related-author">By Mindset</p>
+       <li><img src="../images/related-3.jpg" alt=""
+        width="75px" 
+        height="75px">
+           <a href="#">Why JavaScript is Awesome</a></li>
+            <p class="related-author">By Inkscape15</p>
+      </ul>
+   </aside>
+
+
+
+
+
+  <footer>
+    <p>copy &copy; 2027 by The Code Magazine</p>
+  </footer>
   </body>
 </html>
