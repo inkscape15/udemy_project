@@ -1,8 +1,47 @@
-h1 h2 h3 h4 p li {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 5px solid #1098ad;
+}
+
+.container {
+  width: 800px;
+  border-left: auto;
+  border-right: auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 50px;
+}
+
+post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+nav {
+  font-size: 18px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
 h1 {
-  color: blue;
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
@@ -14,6 +53,8 @@ h2 {
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -25,10 +66,17 @@ h4 {
 p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 2opx;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 footer p {
@@ -47,4 +95,28 @@ footer p {
 
 .ul {
   list-style: none;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+a {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
 }
