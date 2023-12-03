@@ -19,6 +19,16 @@ h2 {
   text-transform: uppercase;
 }
 
+/* 
+h2::after {
+  content: "sale";
+  position: absolute;
+  text-transform: uppercase;
+  background-color: red;
+  font-size: 16px;
+  left: 0;
+} */
+
 a:hover {
   color: #777;
   text-decoration: underline;
@@ -35,8 +45,23 @@ footer:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  position: relative;
 }
 
+.product::after {
+  content: "sale";
+  letter-spacing: 2px;
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #ec2f2f;
+  font-size: 16px;
+  left: -35px;
+  top: -17px;
+  display: inline-block;
+  padding: 7px 15px;
+  color: white;
+  font-weight: bold;
+}
 .shipping {
   font-size: 12px;
   text-transform: uppercase;
@@ -75,4 +100,45 @@ footer:hover {
 .padding-h3 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.container-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.box:first-child {
+  margin-left: 0;
+}
+
+.box-1 {
+  background-color: black;
+}
+
+.box-2 {
+  background-color: blue;
+}
+
+.box-3 {
+  background-color: red;
+}
+
+.box-4 {
+  background-color: orange;
+}
+
+.box-5 {
+  background-color: green;
+}
+
+.box-6 {
+  background-color: brown;
 }
